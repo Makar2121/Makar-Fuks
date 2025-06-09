@@ -1,0 +1,10 @@
+stages:
+  - test
+
+hello_job:
+  stage: test
+  script:
+    - echo "Hello CI/CD!"
+  only:
+    - main
+    - merge_requests
